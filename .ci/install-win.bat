@@ -44,10 +44,10 @@ if NOT "%PYUPGRADE_WIN_V%" == "" (
     ) else (
         echo ***** Upgrading from Python %PREV_PYTHON_V% to %PYUPGRADE_WIN_V%
         echo *** Downloading Python install exe
-        curl -L -O https://www.python.org/ftp/python/%PYUPGRADE_WIN_V%/python-%PYUPGRADE_WIN_V%-amd64.exe
-        if not exist python-%PYUPGRADE_WIN_V%-amd64.exe (exit /b 80)
+        curl -L -O https://www.python.org/ftp/python/%PYUPGRADE_WIN_V%/python-%PYUPGRADE_WIN_V%-arm64.exe
+        if not exist python-%PYUPGRADE_WIN_V%-arm64.exe (exit /b 80)
         echo *** Installing Python %PYUPGRADE_WIN_V%
-        python-%PYUPGRADE_WIN_V%-amd64.exe /quiet PrependPath=1
+        python-%PYUPGRADE_WIN_V%-arm64.exe /quiet PrependPath=1
         if not exist %PYTHON_PATH%\python.exe (exit /b 90)
         echo ***** Upgrade Complete
         echo Python Version
