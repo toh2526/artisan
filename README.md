@@ -2,7 +2,7 @@
 
 [Artisan](https://artisan-scope.org/)
 ==========
-Visual scope for coffee roasters
+Visual scope for coffee roasters.
 
 [![Latest release](https://img.shields.io/github/release/artisan-roaster-scope/artisan.svg)](https://github.com/artisan-roaster-scope/artisan/releases/latest)
 [![Pre-release](https://img.shields.io/github/release-pre/artisan-roaster-scope/artisan.svg)](https://github.com/artisan-roaster-scope/artisan/releases/continuous)
