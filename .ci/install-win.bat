@@ -34,6 +34,10 @@ ver
 echo Python Version
 python -V
 
+echo === ALL ENVIRONMENT VARS ===
+SET
+echo === ===
+
 ::
 :: Upgrade the Python version to PYUPGRADE_WIN_V when the environment variable exists.
 ::
@@ -114,6 +118,7 @@ echo ***** Finished install pyinstaller v%PYINSTALLER_VER%
 :: download and install required libraries not available on pip
 ::
 echo curl vc_redist.arm64.exe
+echo at %VC_REDIST%
 curl -L -O %VC_REDIST%
 if not exist vc_redist.arm64.exe (exit /b 140)
 
