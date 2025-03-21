@@ -93,7 +93,7 @@ if /i "%BUILD_PYINSTALLER%"=="True" (
     rem
     rem build the bootloader and wheel
     echo ***** Running WAF
-    python ./waf all --msvc_targets=x64
+    python ./waf all --msvc_targets=arm64
     cd ..
     echo ***** Start build pyinstaller v%PYINSTALLER_VER% wheel
     rem redirect standard output to lower the noise in the logs
@@ -113,9 +113,9 @@ echo ***** Finished install pyinstaller v%PYINSTALLER_VER%
 ::
 :: download and install required libraries not available on pip
 ::
-echo curl vc_redist.x64.exe
+echo curl vc_redist.arm64.exe
 curl -L -O %VC_REDIST%
-if not exist vc_redist.x64.exe (exit /b 140)
+if not exist vc_redist.arm64.exe (exit /b 140)
 
 
 ::
